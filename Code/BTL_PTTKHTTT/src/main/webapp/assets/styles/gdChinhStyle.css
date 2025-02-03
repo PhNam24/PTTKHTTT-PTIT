@@ -1,0 +1,359 @@
+:root {
+    --dark-bg: #1a1c23;
+    --panel-bg: #242731;
+    --orange-btn: #ff9f43;
+    --green-btn: #28c76f;
+    --blue-btn: #4c84ff;
+    --red-btn: #ff4d4d;
+}
+
+body {
+    background-color: var(--dark-bg);
+    color: #fff;
+    min-height: 100vh;
+}
+
+.left-panel {
+    background-color: var(--panel-bg);
+    height: 100vh;
+    padding: 10px; /* Tăng padding */
+    position: fixed;
+    width: 300px; /* Tăng width của panel */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.content-area {
+    margin-left: 300px; /* Điều chỉnh margin theo width mới của panel */
+}
+
+.profile-card {
+    background-color: var(--panel-bg);
+    border-radius: 15px;
+    padding: 30px;
+}
+
+.avatar-container {
+    width: 180px; /* Tăng kích thước avatar */
+    height: 180px;
+    margin: 0 auto 30px;
+}
+
+.profile-card h5 {
+    font-size: 1.8rem !important; /* Tăng font size tên */
+    margin-bottom: 15px !important;
+    font-weight: 600;
+}
+
+.profile-card p {
+    font-size: 1.3rem !important; /* Tăng font size role */
+    color: #a0aec0;
+    margin-bottom: 30px !important;
+}
+
+.personal-info {
+    margin-top: 30px;
+}
+
+.info-item {
+    margin-bottom: 25px;
+    padding: 15px;
+    border-radius: 10px;
+    transition: background-color 0.3s;
+}
+
+.info-item:hover {
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+.info-label {
+    color: #a0aec0;
+    font-size: 1.2rem; /* Tăng font size label */
+    margin-bottom: 8px;
+}
+
+.info-label i {
+    font-size: 1.3rem;
+    width: 30px;
+}
+
+.info-value {
+    color: #fff;
+    font-size: 1.3rem; /* Tăng font size giá trị */
+    word-break: break-all;
+    padding-left: 30px;
+}
+
+.logout-btn {
+    background-color: #374151;
+    border: none;
+    color: #fff;
+    padding: 15px;
+    border-radius: 12px;
+    width: 100%;
+    transition: all 0.3s;
+    font-size: 1.3rem;
+    margin-top: 20px;
+}
+
+.logout-btn i {
+    font-size: 1.4rem;
+}
+
+.logout-btn:hover {
+    background-color: #4b5563;
+    color: #fff;
+    transform: translateY(-2px);
+}
+
+.content-wrapper {
+    text-align: center;
+    max-width: 800px;
+    width: 100%;
+    padding: 20px;
+    margin: auto;
+}
+
+.store-header {
+    text-align: center;
+    margin-bottom: 50px;
+    padding: 20px;
+    background-color: var(--panel-bg);
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.store-name {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+    background: linear-gradient(45deg, #ff9f43, #ff7f50);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.store-info {
+    font-size: 1.1rem;
+    color: #a0aec0;
+}
+
+.management-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.management-btn {
+    border: none;
+    color: #fff;
+    padding: 25px;
+    border-radius: 12px;
+    font-size: 1.2rem;
+    transition: all 0.3s;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.management-btn:hover {
+    transform: translateY(-2px);
+    color: #fff;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    filter: brightness(110%);
+}
+
+.management-btn i {
+    font-size: 1.5rem;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+}
+
+.btn-supplier {
+    background-color: var(--orange-btn);
+}
+
+.btn-clothes {
+    background-color: var(--green-btn);
+}
+
+.btn-report {
+    background-color: var(--blue-btn);
+}
+
+.btn-return {
+    background-color: var(--red-btn);
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+/* New styles for centering */
+.page-container {
+    display: flex;
+    width: 100%;
+}
+
+.content-area {
+    flex-grow: 1;
+    margin-left: 240px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Search Bar */
+.search-bar {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.search-input {
+    flex-grow: 0;
+    height: 45px;
+    border-radius: 8px;
+    padding: 0 15px;
+    font-size: 1.1rem;
+    border: none;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.search-btn {
+    height: 45px;
+    border-radius: 8px;
+    font-size: 1rem;
+    padding: 0 40px;
+}
+
+/* Table */
+.table-container {
+    margin: 20px auto;
+    max-width: 900px;
+}
+
+.table th, .table td {
+    vertical-align: middle;
+}
+
+.table thead th {
+    background-color: var(--panel-bg);
+    color: #fff;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+}
+
+.table tbody tr:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Add these styles to your existing CSS */
+.section-title {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    text-align: center;
+    background: linear-gradient(45deg, #ff9f43, #ff7f50);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.supplier-section, .sales-summary-section, .order-details-section {
+    margin-bottom: 50px;
+    background-color: var(--panel-bg);
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.info-grid {
+    display: flex;
+    flex-direction: column;
+}
+
+.info-row {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.info-row .info-label {
+    font-weight: bold;
+    margin-right: 5px;
+    white-space: nowrap;
+}
+
+.info-row .info-value {
+    margin-right: 15px;
+}
+.info-item {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(255, 255, 255, 0.05);
+    padding: 15px;
+    border-radius: 10px;
+    transition: background-color 0.3s;
+}
+
+.info-item:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.info-label {
+    color: #a0aec0;
+    font-size: 1rem;
+    margin-bottom: 8px;
+}
+
+.info-value {
+    color: #fff;
+    font-size: 1rem;
+    word-break: break-all;
+}
+
+.month-sales {
+    margin-bottom: 40px;
+}
+
+.month-title {
+    font-size: 1.5rem;
+    color: #ff9f43;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.no-data {
+    text-align: center;
+    color: #a0aec0;
+    font-size: 1.2rem;
+    padding: 20px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .info-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.order-product-img {
+    max-width: 120px;
+    max-height: 120px;
+    object-fit: cover;
+}
+
+@media (max-width: 768px) {
+    .order-info-grid {
+        grid-template-columns: 1fr;
+    }
+}

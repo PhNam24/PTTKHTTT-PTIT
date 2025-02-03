@@ -1,0 +1,65 @@
+:root {
+    --dark-bg: #1a1c23;
+    --panel-bg: #242731;
+    --orange-btn: #ff9f43;
+    --green-btn: #28c76f;
+    --blue-btn: #4c84ff;
+    --red-btn: #ff4d4d;
+}
+
+body {
+    background-color: var(--dark-bg);
+    color: #fff ;
+    min-height: 100vh;
+}
+
+.card {
+    background-color: var(--panel-bg);
+    border: none;
+    border-radius: 10px;
+    color: #fff;
+}
+
+.form-control, .form-control:focus {
+    background-color: var(--dark-bg);
+    border: 1px solid #374151;
+    color: #fff;
+}
+
+.form-control:focus {
+    box-shadow: 0 0 0 0.25rem rgba(76, 132, 255, 0.25);
+}
+
+.btn-primary {
+    background-color: var(--blue-btn);
+    border: none;
+}
+
+.btn-success {
+    background-color: var(--green-btn);
+    border: none;
+}
+
+.btn-warning {
+    background-color: var(--orange-btn);
+    border: none;
+    color: #fff;
+}
+
+.btn-return {
+    background-color: var(--red-btn);
+    border: none;
+    color: #fff;
+}
+
+.payment-account {
+    background-color: var(--dark-bg);
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
